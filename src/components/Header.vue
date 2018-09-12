@@ -1,10 +1,17 @@
 <template>
-    <h1>nadlan</h1>
+    <div>
+        <h1>nadlan</h1>
+        <nav-bar/>
+    </div>
 </template>
 
 <script>
-export default {
+import Navbar from "@/components/Navbar.vue";
 
+export default {
+    components: {
+    Navbar,
+  }
 }
 </script>
 
