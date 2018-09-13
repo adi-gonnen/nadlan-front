@@ -21,11 +21,13 @@ export default {
 .nav {
     /* justify-content: space-around; */
     align-items: center;
-    margin: auto;
+    margin: 20px auto;
     /* width: 50% */
 }
 .nav>a {
     padding: 5px;
+    font-size: 1.5em;
+    text-decoration: none;
 }
 .flex {
     display: flex;
