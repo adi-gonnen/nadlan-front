@@ -4,6 +4,7 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Contact from './views/Contact.vue'
 import Article from './views/Article.vue'
+import Gallery from './views/Gallery.vue'
 import Login from './views/Login.vue'
 import HouseDetails from './views/HouseDetails.vue'
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/article',
       name: 'article',
       component: Article
+    },
+    {
+      path: '/gallery',
+      name: 'gallery',
+      component: Gallery
     },
     {
       path: '/house/:houseId?',

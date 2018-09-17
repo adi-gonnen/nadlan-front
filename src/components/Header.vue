@@ -21,7 +21,7 @@
                 <img src="img/logo-ruthi.png"/>
                 <div class="phone flex">
                     <p>📞</p>
-                    <h4> +972-54-5222395</h4>
+                    <h4> +972-54-4842920</h4>
                 </div>
             </div>
         </div>

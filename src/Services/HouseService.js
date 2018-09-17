@@ -1,17 +1,25 @@
-[{
-    price: 2030000,
-    parking: true,
-    sunBalcony: true,
-    storage: true,
-    elevator: false,
-    securityRoom: false,
-    category: 4,
-    floor: 2/3,
-    size: 112,
-    img: ["img/houses/house1.jpg", "img/houses/house2.jpg", "img/houses/house3.jpg"],
-    en: {
-        title: "4 rooms in Ra'anana center",
-        desc: "very nice appartment, excellent for investment.",
-        city: "Ra'anana"
-    }
-}]
+import axios from 'axios'
+
+const HOUSE_URL = (process.env.NODE_ENV !== 'development')? '/house': '//localhost:3000/house';
+
+function getHouse() {
+    // console.log('service front');    
+    return axios.get(HOUSE_URL)
+        .then(res => {
+            // console.log('house service front:', res.data);
+            return res.data
+        })
+}
+
+function getHouseById(houseId) {
+    return axios.get(`${HOUSE_URL}/${houseId}`)
+        .then(res => {
+            return res.data
+        })
+        .catch(err => console.log('Problem talking to server', err))
+}
+
+export default {
+    getHouse,
+    getHouseById
+}
