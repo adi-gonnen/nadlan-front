@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav"> -->
       <Header></Header>
       <router-view/>
-    </div>
+    <!-- </div> -->
   </div>
 </template>
 <script>
@@ -26,3 +26,5 @@ export default {
 }
 #nav {
   padding: 30px;
+}
+</style>
