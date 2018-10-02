@@ -24,3 +24,8 @@ export default {
   }
 };
 </script>
+<style>
+.house-cards-container {
+  flex-wrap: wrap;
+}
+</style>

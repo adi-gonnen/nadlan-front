@@ -5,7 +5,10 @@
                 <img src="img/logo-sarit.png"/>
                 <div class="phone flex">
                     <p>📞</p>
-                    <h4> +972-54-5222395</h4>
+                    <h4 class="phone-num">
+                        +972-54-5222395
+                        <a href="tel:+972-54-5222395" />
+                    </h4>
                 </div>
             </div>
             <div class="header-center flex column">
@@ -21,7 +24,10 @@
                 <img src="img/logo-ruthi.png"/>
                 <div class="phone flex">
                     <p>📞</p>
-                    <h4> +972-54-4842920</h4>
+                    <h4 class="phone-num">
+                        +972-54-4842920
+                        <a href="tel:+972-54-4842920" />
+                    </h4>
                 </div>
             </div>
         </div>
@@ -89,4 +95,7 @@ export default {
     margin: 0;
     padding: 10px 2px;
 }
+/* .phone-num {
+    cursor: pointer;
+} */
 </style>

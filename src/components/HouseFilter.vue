@@ -19,7 +19,7 @@
                 <el-checkbox-group class="checkbox-filter" v-model="filterBy.city" v-if="allFilterCities" @change="setFilter">
                     <ul class="checkbox flex column">
                         <li v-for="oneCity in allFilterCities" :key="oneCity">
-                            <el-checkbox class="checkbox-filter" :label="oneCity"></el-checkbox>
+                            <el-checkbox class="checkbox-filter" :label="oneCity.name"></el-checkbox>
                         </li>
                     </ul>
                 </el-checkbox-group>
@@ -86,6 +86,11 @@ export default {
 
 <style scoped lang="scss">
 // @import "~@/assets/scss/style.scss";
-
-
+.filter-menu {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.checkbox {
+  font-size: 2em;
+}
 </style>

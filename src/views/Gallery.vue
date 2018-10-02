@@ -1,8 +1,8 @@
 <template>
     <section>
-        <div class="images-container-gallery flex ">
-            <house-list class="house-list container flex" :houses="HousesForDisplay" ></house-list>
-            <house-filter></house-filter>
+        <div class="images-container-gallery flex">
+            <house-filter class="filter"></house-filter>
+            <house-list class="house-list-container flex" :houses="HousesForDisplay" ></house-list>
         </div>
     </section>
 </template>
@@ -39,5 +39,12 @@ name: "gallery",
 </script>
 
 <style>
-
+.filter {
+  text-align: left;
+  margin: 30px;
+  
+}
+.house-list-container {
+  flex-wrap: wrap;
+}
 </style>

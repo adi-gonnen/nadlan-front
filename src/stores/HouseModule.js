@@ -10,7 +10,10 @@ export default {
             allCategories: true,
             category: [],
         },
-        allCities: ['Herzelia', 'Ra\'anana', 'Kfar-Saba'],
+        allCities: [{name: 'Herzelia', src: "img/houses/house1.jpg"},
+                    {name: 'Ra\'anana', src: "img/houses/house2.jpg"},
+                    {name: 'Kfar-Saba', src: "img/houses/house3.jpg"}
+                ],
         houseForCity: null,
         allFilterCategories: ['3', '4', '5', 'private', 'two floors'],
     },

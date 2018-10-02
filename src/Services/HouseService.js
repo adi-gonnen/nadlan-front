@@ -33,6 +33,7 @@ function getHouseById(houseId) {
 function getHouseByCity(city) {
     return axios.get(`${HOUSE_URL}/gallery/${city}`)
         .then(res => {
+            console.log('city service%%%%%', res.data);            
             return res.data
         })
         .catch(err => console.log('Problem talking to server', err))
